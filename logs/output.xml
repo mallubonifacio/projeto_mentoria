@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230919 10:38:03.564" rpa="false" schemaversion="3">
+<suite id="s1" name="registrarProdutoTest" source="/Users/maria.bonifacio/Projects/Projeto_Mentoria/Tests/registrarProdutoTest.robot">
+<test id="s1-t1" name="Registrar 1 produto, e validá-lo através do Report" line="13">
+<kw name="Open App" library="Commons" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${URL_BASE}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>app=${EXECDIR}${APP}</arg>
+<arg>udid=${UDID}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230919 10:39:23.094" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:23.092" endtime="20230919 10:39:23.100"/>
+</kw>
+<msg timestamp="20230919 10:39:23.103" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:23.103" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/maria.bonifacio/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/maria.bonifacio/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1073:9)
+    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:491:57)</msg>
+<status status="FAIL" starttime="20230919 10:38:03.958" endtime="20230919 10:39:23.104"/>
+</kw>
+<status status="FAIL" starttime="20230919 10:38:03.958" endtime="20230919 10:39:23.104"/>
+</kw>
+<kw name="Close App" library="Commons" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230919 10:39:23.106" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:23.105" endtime="20230919 10:39:23.106"/>
+</kw>
+<msg timestamp="20230919 10:39:23.108" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:23.108" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:23.105" endtime="20230919 10:39:23.109"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230919 10:39:23.110" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:23.110" endtime="20230919 10:39:23.110"/>
+</kw>
+<msg timestamp="20230919 10:39:23.112" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:23.112" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:23.109" endtime="20230919 10:39:23.113"/>
+</kw>
+<status status="FAIL" starttime="20230919 10:39:23.105" endtime="20230919 10:39:23.113">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<status status="FAIL" starttime="20230919 10:38:03.958" endtime="20230919 10:39:23.113">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/maria.bonifacio/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/maria.bonifacio/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1073:9)
+    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:491:57)
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</test>
+<test id="s1-t2" name="Registrar 2 produtos, com product Group distintos, e validá-los através do Report" line="19">
+<kw name="Open App" library="Commons" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${URL_BASE}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>app=${EXECDIR}${APP}</arg>
+<arg>udid=${UDID}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230919 10:39:24.086" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:24.085" endtime="20230919 10:39:24.087"/>
+</kw>
+<msg timestamp="20230919 10:39:24.088" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:24.089" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/maria.bonifacio/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/maria.bonifacio/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1073:9)
+    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:491:57)</msg>
+<status status="FAIL" starttime="20230919 10:39:23.115" endtime="20230919 10:39:24.089"/>
+</kw>
+<status status="FAIL" starttime="20230919 10:39:23.115" endtime="20230919 10:39:24.089"/>
+</kw>
+<kw name="Close App" library="Commons" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230919 10:39:24.090" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:24.090" endtime="20230919 10:39:24.091"/>
+</kw>
+<msg timestamp="20230919 10:39:24.092" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:24.092" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:24.090" endtime="20230919 10:39:24.092"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230919 10:39:24.093" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:24.093" endtime="20230919 10:39:24.093"/>
+</kw>
+<msg timestamp="20230919 10:39:24.095" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:24.095" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230919 10:39:24.093" endtime="20230919 10:39:24.095"/>
+</kw>
+<status status="FAIL" starttime="20230919 10:39:24.090" endtime="20230919 10:39:24.096">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<status status="FAIL" starttime="20230919 10:39:23.115" endtime="20230919 10:39:24.096">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/maria.bonifacio/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/maria.bonifacio/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1073:9)
+    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:491:57)
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</test>
+<doc>Enquando usuário devo poder criar um produto e validar sua criação através da ferramenta Report.</doc>
+<status status="FAIL" starttime="20230919 10:38:03.565" endtime="20230919 10:39:24.097"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="registrarProdutoTest">registrarProdutoTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230919 10:39:23.103" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:23.108" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:23.112" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:24.088" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:24.092" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230919 10:39:24.095" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

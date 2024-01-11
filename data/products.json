@@ -1,0 +1,32 @@
+{
+    "PRODUCT1":
+        {
+           "code": "12345678",
+           "description": "Arroz",
+           "packing": "5kg",
+           "amount": "3",
+           "unit value": "23.00",
+           "lot": "1"
+        }
+    ,
+    "PRODUCT2":
+        {
+           "code": "87654433",
+           "description": "Fralda Baby",
+           "packing": "32un",
+           "amount": "5",
+           "unit value": "39.00",
+           "lot": "1"
+        }
+    ,
+    "PRODUCT3":
+        {
+           "code": "92372366",
+           "description": "Detergente",
+           "packing": "300ml",
+           "amount": "9",
+           "unit value": "1.00",
+           "lot": "2"
+        }
+
+}
